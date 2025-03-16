@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "marp . --html --server"
+    "dev": "marp . --html --server",
+    "bulld:html": "marp --html"
   },
   "author": "",
   "license": "ISC",
@@ -13,7 +14,7 @@
   },
   "marp": {
     "inputDir": "./src/",
-    "output": "./public/"
+    "output": "./src/"
   }
 }
 
