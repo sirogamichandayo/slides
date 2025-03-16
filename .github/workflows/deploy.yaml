@@ -22,7 +22,7 @@ jobs:
         run: npm install -g @marp-team/marp-cli
 
       - name: プレゼンテーションをビルド
-        run: marp . --html --output dist/index.html
+        run: marp
 
       - name: GitHub Pages へデプロイ
         uses: peaceiris/actions-gh-pages@v3
