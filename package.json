@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "marp"
+    "dev": "marp . --html --server"
   },
   "author": "",
   "license": "ISC",

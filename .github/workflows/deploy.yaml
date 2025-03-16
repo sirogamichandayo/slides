@@ -3,29 +3,41 @@ name: Deploy Marp Presentation
 on:
   push:
     branches:
-      - main  # メインブランチに push されたときに実行
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: リポジトリをチェックアウト
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Node.js のセットアップ
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: '20'  # 必要に応じて Node.js のバージョンを指定
 
-      - name: Marp CLI をインストール
+      - name: Install marp cli
         run: npm install -g @marp-team/marp-cli
 
-      - name: プレゼンテーションをビルド
+      - name: Build
         run: marp
 
-      - name: GitHub Pages へデプロイ
-        uses: peaceiris/actions-gh-pages@v3
+      - uses: actions/upload-pages-artifact@v3
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
+          path: public
+
+
+  deploy:
+    needs: build
+    permissions:
+      id-token: write
+      pages: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
