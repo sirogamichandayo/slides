@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "marp . --html --server",
-    "bulld:html": "marp --html"
+    "build:html": "marp --html"
   },
   "author": "",
   "license": "ISC",
