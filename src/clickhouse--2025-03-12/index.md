@@ -4,19 +4,36 @@ theme: gaia
 paginate: true
 footer: 2025-03-12 | ClickHouse Meetup Tokyo
 
-title: お家 ClickHouse で作る！誰でもアクセス可能なリアルタイム分析環境構築事例 | cota
+title: お家（House） ClickHouse で作る！誰でもアクセス可能なリアルタイム分析環境構築事例 | cota
 author: 友岡湖太（cota） / XiroGA3
 ---
 
 <!-- _class: lead -->
 
-#### お家 ClickHouse で作る！誰でもアクセス可能な<br />リアルタイム分析環境構築事例
+#### お家（House） ClickHouse で作る！誰でもアクセス可能な<br />リアルタイム分析環境構築事例
 
 **友岡湖太（cota）/ XiroGA3**
 
 <br />
 
 2025-03-12 | ClickHouse Meetup Tokyo
+
+---
+
+## Thank you!!
+
+<div style="display: flex; align-items: center; justify-content: space-between;">
+  <!-- 左側のテキスト -->
+  <div style="flex: 1; padding-right: 20px;">
+    <p style="font-size: 0.8em;">
+      このイベントに誘っていただいた Masato Suzuki さんありがとうございます
+    </p>
+  </div>
+  <!-- 右側の画像 -->
+  <div style="flex: 0 0 auto;">
+    <img src="./imgs/tweet.png" alt="ツイート画像" style="max-width:600px;">
+  </div>
+</div>
 
 
 ---
@@ -121,7 +138,7 @@ AtCoder Database (https://atcoder-db.sirogami.com)
 
 AtCoder Database (https://atcoder-db.sirogami.com)
 
-- AtCoder の全問題、全ユーザー、全提出約7000万レコードを分析可能
+- AtCoder の全問題、全ユーザー、全提出約1億レコードを分析可能
 - Metabase 経由で分析可能
 - ClickHouse による高速な分析
 - Google アカウントによる認証で誰でも使える（metabase 改造して誰でもサインアップ出来るように）
@@ -293,7 +310,6 @@ AtCoder Database (https://atcoder-db.sirogami.com)
 - ClickHouse Operator による容易なデプロイ
 - 複数ノードにまたがるレプリケーションを瞬時に構築
 - リソースの動的調整が可能
-  ClickHouse は CPU のコア数に
 
 ---
 
@@ -317,12 +333,11 @@ https://zenn.dev/sirogami/scraps/7801394e34d10b
   - 今回の登壇もそこから始まりました 
 
 
-
 ---
 
-### ClickHouse について感じたこと
+### ClickHouse について感じたこと(最後)
 
-- Document が英語ばかり -> 3/11 に日本語版が出たようです！
+- Document が英語ばかり -> 03/11 に日本語版が出たようです！
 
 <!-- 下部に配置する ClickHouse Documentation Card（フッターとの余白あり） -->
 <div style="position: absolute; bottom: 80px; left: 0; width: 100%; background: #f7f8fa; border-top: 4px solid #3E8ED0; padding: 20px; box-sizing: border-box; display: flex; align-items: center; justify-content: space-between; font-family: sans-serif;">
@@ -341,22 +356,6 @@ https://zenn.dev/sirogami/scraps/7801394e34d10b
   </div>
 </div>
 
----
-
-## Thank you!!
-
-<div style="display: flex; align-items: center; justify-content: space-between;">
-  <!-- 左側のテキスト -->
-  <div style="flex: 1; padding-right: 20px;">
-    <p style="font-size: 0.8em;">
-      このイベントに誘っていただいた Masato Suzuki さんありがとうございます
-    </p>
-  </div>
-  <!-- 右側の画像 -->
-  <div style="flex: 0 0 auto;">
-    <img src="./imgs/tweet.png" alt="ツイート画像" style="max-width:600px;">
-  </div>
-</div>
 
 
 
