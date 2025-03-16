@@ -310,6 +310,7 @@ AtCoder Database (https://atcoder-db.sirogami.com)
 - ClickHouse Operator による容易なデプロイ
 - 複数ノードにまたがるレプリケーションを瞬時に構築
 - リソースの動的調整が可能
+  - 友達がまた PC がくれるかも 
 
 ---
 
@@ -326,16 +327,16 @@ https://zenn.dev/sirogami/scraps/7801394e34d10b
 ## ClickHouse について感じたこと
 
 - 初期構築は楽だが、テーブルの構築はやっぱり大変
-  - ClickHouse 特有の概念が多い気がする、ReplacingMergeTree とか、マスタデータの扱いとか
-  - Tutorial は充実してる [Tutorial](https://learn.clickhouse.com/visitor_class_catalog/category/116050)
-  - ClickHouse の中の人にはよく助けてもらっています m(_ _)m
+- ClickHouse 特有の概念が多い気がする、ReplacingMergeTree とか、マスタデータの扱いとか
+- Tutorial は充実してる [Tutorial](https://learn.clickhouse.com/visitor_class_catalog/category/116050)
+- ClickHouse の中の人にはよく助けてもらっています m(_ _)m
   - Twitter で ClickHouse 分からんって言ったらすぐ助けてくれる
   - 今回の登壇もそこから始まりました 
 
 
 ---
 
-### ClickHouse について感じたこと(最後)
+### ClickHouse について感じたこと
 
 - Document が英語ばかり -> 03/11 に日本語版が出たようです！
 
@@ -356,7 +357,7 @@ https://zenn.dev/sirogami/scraps/7801394e34d10b
   </div>
 </div>
 
+---
 
-
-
+### 終わり
 
